@@ -1,0 +1,195 @@
+/* Container Styles */
+.user-management-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.user-management-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Toolbar */
+.user-management-toolbar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.user-management-toolbar .action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.user-management-toolbar .logout-button {
+    margin-left: auto;
+    background-color: #dc3545;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.user-management-toolbar .logout-button:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+/* Table Styles */
+.user-management-table {
+    width: 100%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    overflow-x: auto; /* Add horizontal scrolling for small screens */
+}
+
+.user-management-table thead th {
+    background-color: #007bff;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #dddddd;
+}
+
+.user-management-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.user-management-table tbody td {
+    padding: 10px;
+    border: 1px solid #dddddd;
+}
+
+/* Checkbox */
+.user-management-checkbox {
+    cursor: pointer;
+}
+
+/* Alerts */
+.alert-container {
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+.user-management-toolbar .action-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.user-management-toolbar .action-button:hover {
+    transform: scale(1.05);
+}
+
+.user-management-toolbar .block-button {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.user-management-toolbar .block-button:hover {
+    background-color: #e0a800;
+}
+
+.user-management-toolbar .unblock-button {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.user-management-toolbar .unblock-button:hover {
+    background-color: #218838;
+}
+
+.user-management-toolbar .delete-button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.user-management-toolbar .delete-button:hover {
+    background-color: #c82333;
+}
+
+/* Icon Styles */
+.user-management-toolbar .action-icon {
+    margin-right: 8px;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+/* Responsive Design */
+
+/* Medium screens (up to 992px) */
+@media (max-width: 992px) {
+    .user-management-toolbar {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .user-management-toolbar .logout-button {
+        margin-left: 0;
+    }
+}
+
+/* Small screens (up to 768px) */
+@media (max-width: 768px) {
+    .user-management-table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .user-management-table thead th,
+    .user-management-table tbody td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .user-management-toolbar .action-button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .logout-button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
+/* Extra small screens (up to 576px) */
+@media (max-width: 576px) {
+    .user-management-title {
+        font-size: 20px;
+    }
+
+    .user-management-toolbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logout-button {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    .action-button {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+}
